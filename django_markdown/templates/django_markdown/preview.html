@@ -4,11 +4,48 @@
 <head>
 <base target="_blank">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>markItUp! preview</title>
-<link rel="stylesheet" type="text/css" href="{{ params.css }}" />
+<title>Content preview</title>
+<style type="text/css">
+    div#preview {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+    }
+
+    div#preview div.sub-section-number {
+        clear: left;
+        float: left;
+        width: 5%;
+    }
+
+    div#preview div.sub-section-text {
+        float: left;
+        width: 94%;
+        text-align: justify;
+        margin-bottom: 5px;
+    }
+
+    div#preview div.sub-section-text em {
+        text-decoration: underline;
+        font-style: normal;
+    }
+
+    div#preview div.sub-section-text ol {
+        list-style-type: lower-alpha;
+    }
+
+    div#preview div.sub-section-text ol, div#preview div.sub-section-text ul {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+</style>
 </head>
+
 <body>
-{{ content|markdown }}
+<div id="preview">
+{{ content|safe }}
+</div>
 </body>
 </html>
 

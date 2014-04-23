@@ -16,6 +16,8 @@
 .miu-icon-link a { background-position: -594px 0; }
 .miu-icon-list-bullet a { background-position: -660px 0; }
 .miu-icon-list-numeric a { background-position: -726px 0; }
+/* uses h2 sprite position ... */
+.miu-icon-sub-list a { background-position: -198px 0; }
 .miu-icon-picture a { background-position: -792px 0; }
 .miu-icon-preview a { background-position: -858px 0; }
 .miu-icon-quotes a { background-position: -924px 0; }

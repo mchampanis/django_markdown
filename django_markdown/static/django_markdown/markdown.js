@@ -70,6 +70,7 @@ miu = (function($){
             {name:'Numeric List', openWith:function(markItUp) {
                 return markItUp.line+'. ';
             }, className: 'miu-icon miu-icon-list-numeric'},
+            {name:'Sub-list', openWith:'    - ', className: 'miu-icon miu-icon-sub-list' },
             {separator:'---------------' },
             //{name:'Picture', key:'P', replaceWith:'![[![Alternative text]!]]([![Url:!:http://]!] "[![Title]!]")', className: 'miu-icon miu-icon-picture'},
             //{name:'Link', key:'L', openWith:'[', closeWith:']([![Url:!:http://]!] "[![Title]!]")', placeHolder:'Your text to link here...', className: 'miu-icon miu-icon-link' },
